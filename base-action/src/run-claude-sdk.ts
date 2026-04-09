@@ -168,6 +168,7 @@ export async function runClaudeWithSdk(
 
       if (message.type === "result") {
         resultMessage = message as SDKResultMessage;
+        break;
       }
     }
   } catch (error) {
